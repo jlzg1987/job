@@ -1,0 +1,53 @@
+/* Header.css */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #ffffff;
+  }
+  .menu {
+    background-color: white; /* Establece el fondo del contenedor del menú a blanco */
+    padding: 10px; /* Añade un poco de relleno para separar el contenido del borde */
+  }
+  .logo img {
+    width: 100px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height: auto;
+  }
+  .logo img:hover {
+    cursor: pointer;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu ul li {
+    margin-right: 20px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
+
+  .menu ul li a:hover {
+    color: rgb(54, 42, 228); /* Cambia el color del texto a verde al pasar el mouse sobre el enlace */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+  }
+  /* Ejemplo de media query para ajustar estilos en pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    .logo img {
+      width: 80px; /* Cambia el tamaño del logo para pantallas más pequeñas */
+    }
+  
+    .menu ul li {
+      margin-right: 10px; /* Ajusta el espacio entre elementos del menú */
+    }
+  }
+  
+  
